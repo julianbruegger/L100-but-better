@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Templates</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      width: 200px;
+      height: 250px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, textarea, select {
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <label for="templateSelector">Select Template:</label>
+  <select id="templateSelector"></select>
+
+  <label for="editableTitle">Editable Title:</label>
+  <input type="text" id="editableTitle">
+
+  <label for="editableContent">Editable Content:</label>
+  <textarea id="editableContent"></textarea>
+
+  <button id="saveButton">Save Changes</button>
+  <button id="copyContentButton">Copy Content to Clipboard</button>
+
+
+  <script src="popup.js"></script>
+</body>
+</html>
