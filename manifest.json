@@ -1,14 +1,14 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "L100 but Better",
-  "version": "1.0",
-  "description": "Customize CSS for example.com",
+  "version": "2.0",
+  "description": "Introducing L100 Enhancer, a cutting-edge mobile application designed to revolutionize your visual experience.",
   "permissions": [
     "activeTab",
-    "storage"
+    "storage", "tabs"
   ],
-  "browser_action": {
-    "default_icon": "logo.jpg",
+  "action": {
+    "default_icon": "logo.png",
     "default_popup": "popup.html"
   },
   "content_scripts": [
@@ -17,7 +17,11 @@
       "js": ["contentScript.js"],
       "css": ["styles.css"]
     }
-  ],  "web_accessible_resources": [
-    "popup.js"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.js"],
+      "matches": ["*://*/*"]
+    }
   ]
 }

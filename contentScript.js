@@ -43,20 +43,80 @@ window.onload=function(){
     document.getElementById("sc-jRQBWg FfqaS").addEventListener("click", displayDate);
 }
 
-// Function to handle the selected template
-function loadSelectedTemplate() {
-    const selectedTemplate = document.getElementById('savedTemplateSelector').value;
-    const storedContent = localStorage.getItem(selectedTemplate + '_content') || '';
-  
-    // Inject the content into the currently focused textarea on the page
-    const focusedElement = document.activeElement;
-  
-    if (focusedElement.tagName === 'TEXTAREA') {
-      focusedElement.value = storedContent;
-    } else {
-      console.error('No textarea is currently focused.');
-    }
+// contentScript.js
+
+function applyUserColor() {
+  chrome.storage.sync.get(['selectedColor'], function (result) {
+      const selectedColor = result.selectedColor || 'color1';
+
+      // Default styles (Color 1)
+      const defaultStyles = `
+          :root {
+              --bck-main: #020202;
+              --bck-second: #202020;
+              --bck-third: #393939;
+
+              --txt-main: #f0ffff;
+              --txt-active: #b9f8f8;
+
+              --btn: #02556d;
+          }
+      `;
+
+      // Additional styles for Color 2
+      const additionalStyles = `
+          :root {
+              --bck-main: #1a1625;
+              --bck-second: #2f2b3a;
+              --bck-third: #46424f;
+
+              --txt-main: #f0ffff;
+              --txt-active: #b9f8f8;
+
+              --btn: #02556d;
+          }
+      `;
+
+      // Apply the default styles
+      applyStyles(defaultStyles);
+
+      // If Color 2 is selected, apply additional styles and remove Color 1 styles
+      if (selectedColor === 'color2') {
+          applyStyles(additionalStyles);
+          removeStyles('.default-styles');
+      } else {
+          // If Color 1 is selected, remove Color 2 styles
+          removeStyles('.additional-styles');
+      }
+
+      // Add more style adjustments as needed
+  });
+}
+
+// Call the function to apply user color when the content script is executed
+applyUserColor();
+
+// Listen for changes in storage
+chrome.storage.onChanged.addListener(function (changes, namespace) {
+  if (namespace === 'sync' && 'selectedColor' in changes) {
+      applyUserColor();
   }
-  
-  // ... (rest of your code)
-  
+});
+
+function applyStyles(styles, className) {
+  // Remove existing style elements with the same className
+  removeStyles(className);
+
+  // Create a style element and append it to the document's head
+  const styleElement = document.createElement('style');
+  styleElement.classList.add(className);
+  styleElement.textContent = styles;
+  document.head.appendChild(styleElement);
+}
+
+function removeStyles(className) {
+  // Remove existing style elements with the specified className
+  const existingStyles = document.querySelectorAll(className);
+  existingStyles.forEach(style => style.remove());
+}
+

@@ -83,3 +83,25 @@ document.addEventListener('DOMContentLoaded', function () {
     alert('Content copied to clipboard!');
   });
 });
+// popup.js
+
+document.addEventListener('DOMContentLoaded', function () {
+  const colorSelector = document.getElementById('colorSelector');
+  const saveButton = document.getElementById('savecolorButton');
+
+  console.log('Popup loaded successfully!');  // Add this line
+
+  saveButton.addEventListener('click', function () {
+      console.log('Save button clicked');  // Add this line
+
+      const selectedColor = colorSelector.value;
+
+      // Save the selected color to browser storage
+      chrome.storage.sync.set({
+          selectedColor: selectedColor
+      }, function () {
+          console.log('Color palette saved successfully!');
+          //alert('Color palette saved successfully!');
+      });
+  });
+});

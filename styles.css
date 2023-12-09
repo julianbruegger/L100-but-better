@@ -1,7 +1,7 @@
 /* styles.css */
 
 
-/*Define Variables*/
+/*Define Variables
 :root {
   --bck-main: #020202;
   --bck-second: #202020;
@@ -13,6 +13,16 @@
   --btn: #02556d;
 }
 
+:root {
+  --bck-main: #1a1625;
+  --bck-second: #2f2b3a;
+  --bck-third: #46424f;
+
+  --txt-main: #f0ffff;
+  --txt-active: #b9f8f8;
+
+  --btn: #02556d;
+}*/
 
 main {
     background-color: var(--bck-main) !important;
@@ -107,6 +117,7 @@ background-color: var(--btn) !important;
   }
   textarea{
     background-color: var(--bck-third) !important;
+    color: var(--txt-main) !important;
   }
   .FfqaS, .cyFeay
     {
