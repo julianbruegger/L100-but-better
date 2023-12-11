@@ -105,3 +105,15 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 });
+// popup.js
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  const copyDivContentButton = document.getElementById('copyDivContentButton');
+  console.log('Pressed');  // Add this line
+  copyDivContentButton.addEventListener('click', function(){
+
+    alert('Test');
+    
+  });
+  })

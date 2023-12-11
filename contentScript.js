@@ -12,7 +12,7 @@ document.addEventListener('click', function () {
     if (sourceElements.length > 1) {
       // Get the content from the second element (change the index if needed)
       const contentToInsert = sourceElements[1].innerHTML;
-  
+      const testing = '<pre class="dashboard-fehler">'+contentToInsert+'</pre>'
       // Find the target element where you want to insert the content
       const targetElement = document.querySelector('.edit-booking-bottomrow-left');
       // Check if the target element exists
@@ -51,30 +51,30 @@ function applyUserColor() {
 
       // Default styles (Color 1)
       const defaultStyles = `
-          :root {
-              --bck-main: #020202;
-              --bck-second: #202020;
-              --bck-third: #393939;
+            :root {
+            --bck-main: #1a1625;
+            --bck-second: #2f2b3a;
+            --bck-third: #46424f;
 
-              --txt-main: #f0ffff;
-              --txt-active: #b9f8f8;
+            --txt-main: #f0ffff;
+            --txt-active: #b9f8f8;
 
-              --btn: #02556d;
-          }
+            --btn: #02556d;
+        }
       `;
 
       // Additional styles for Color 2
       const additionalStyles = `
-          :root {
-              --bck-main: #1a1625;
-              --bck-second: #2f2b3a;
-              --bck-third: #46424f;
+        :root {
+          --bck-main: #020202;
+          --bck-second: #202020;
+          --bck-third: #393939;
 
-              --txt-main: #f0ffff;
-              --txt-active: #b9f8f8;
+          --txt-main: #f0ffff;
+          --txt-active: #b9f8f8;
 
-              --btn: #02556d;
-          }
+          --btn: #02556d;
+      }
       `;
 
       // Apply the default styles

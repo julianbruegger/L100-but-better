@@ -42,7 +42,7 @@ div:not(.dmfVfU){
 
 }
 
-.jnsRza .react-calendar__month-view__days > button  {
+.jnsRza .react-calendar__month-view__days > button:not(.react-calendar__month-view__days__day--weekend,.dashboard-frei)  {
   background-color: var(--bck-second) !important;
 }
 .sc-gsDKAQ 
@@ -84,9 +84,29 @@ button {
   strong{
     color: var(--txt-main);
   }
-  .jlorcA
-  {
+  .jlorcA{    height: 35px !important;
+  }
+  .junquI > .toprow{
     height: 35px !important;
+  }
+
+  .gSXomW > .expandable > .description{
+    border-width: 1.2px 1.2px 1.2px !important;
+border-style: solid !important;
+border-color:rgb(190, 190, 190) !important;
+  }
+  .gSXomW > .toprow, .foNwWN > .toprow{
+    border-bottom: 1.2px solid rgb(190, 190, 190);
+    padding: 5px;
+    margin-bottom: 3px;
+  }
+  .sc-eCImPb
+  {
+      padding-top: 5px;
+      padding-left: 5px;
+      padding-right: 10px;
+      padding-bottom: 0px;
+  
   }
   .jlorcA > .toprow > div:last-of-type{
     margin: 0px !important;
@@ -131,4 +151,26 @@ background-color: var(--btn) !important;
   }
   .savedTemplateSelector{
     width: 50px;
+  }
+  .FfqaS > div{
+    background-color: var(--btn) !important;
+
+  }
+  .bSDVWa .DBTageMainBox{
+    margin: 5px !important;
+  }
+
+ 
+
+  .ZWdtn .ButtonFull
+  {
+    background-color: var(--btn) !important;
+    box-shadow: 5px 5px 15px 3px #000000    ;
+  }
+  .dashboard-fehler
+  {
+    border: 2px dashed;
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: bold;
   }

@@ -5,10 +5,19 @@
   "description": "Introducing L100 Enhancer, a cutting-edge mobile application designed to revolutionize your visual experience.",
   "permissions": [
     "activeTab",
-    "storage", "tabs"
+    "storage",
+    "tabs"
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_icon": "logo.png",
+    "default_icon": {
+      "16": "logo16.png",
+      "32": "logo32.png",
+      "64": "logo64.png",
+      "128": "logo128.png"
+    },
     "default_popup": "popup.html"
   },
   "content_scripts": [
