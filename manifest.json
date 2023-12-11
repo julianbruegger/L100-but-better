@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "L100 but Better",
-  "version": "2.0",
+  "version": "2.1",
   "description": "Introducing L100 Enhancer, a cutting-edge mobile application designed to revolutionize your visual experience.",
   "permissions": [
     "activeTab",
@@ -13,24 +13,46 @@
   },
   "action": {
     "default_icon": {
-      "16": "logo16.png",
-      "32": "logo32.png",
-      "64": "logo64.png",
-      "128": "logo128.png"
+      "16": "logo/logo16.png",
+      "32": "logo/logo32.png",
+      "64": "logo/logo64.png",
+      "128": "logo/logo128.png"
     },
     "default_popup": "popup.html"
   },
   "content_scripts": [
     {
-      "matches": ["*://activity.leuchterag.ch/*"],
-      "js": ["contentScript.js"],
-      "css": ["styles.css"]
+      "matches": [
+        "*://activity.leuchterag.ch/*"
+      ],
+      "js": [
+        "contentScript.js",
+        "L100TimeFunction.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    },
+    {
+      "matches": [
+        "*://leuchter.atlassian.net/*"
+      ],
+      "css": [
+        "jira.css"
+      ],
+      "js": [
+        "jira.js"
+      ]
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": ["popup.js"],
-      "matches": ["*://*/*"]
+      "resources": [
+        "popup.js"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
     }
   ]
 }
