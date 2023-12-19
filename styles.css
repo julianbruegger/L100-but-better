@@ -25,152 +25,184 @@
 }*/
 
 main {
-    background-color: var(--bck-main) !important;
-  }
+  background-color: var(--bck-main) !important;
+}
 
-div:not(.dmfVfU){
+div:not(.dmfVfU):not(.css-9uxpgx) {
   background-color: var(--bck-second) !important;
   border-radius: 25px;
 
 }
+
+.css-qc6sy-singleValue {
+  color: var(--txt-main) !important;
+}
+
 .react-calendar__tile .react-calendar__tile--active .react-calendar__tile--range .react-calendar__tile--rangeStart .react-calendar__tile--rangeEnd .react-calendar__tile--rangeBothEnds .react-calendar__month-view__days__day .react-calendar__month-view__days__day--weekend {
   background-color: var(--bck-third) !important;
 }
 
-.jnsRza .react-calendar__month-view__days__day.react-calendar__tile--active > div{
-  background-color: rgb(38, 164, 255)!important;
+.jnsRza .react-calendar__month-view__days__day.react-calendar__tile--active>div {
+  background-color: rgb(38, 164, 255) !important;
 
 }
 
-.jnsRza .react-calendar__month-view__days > button:not(.react-calendar__month-view__days__day--weekend,.dashboard-frei)  {
-  background-color: var(--bck-second) !important;
-}
-.sc-gsDKAQ 
-{
+.jnsRza .react-calendar__month-view__days>button:not(.react-calendar__month-view__days__day--weekend, .dashboard-frei) {
   background-color: var(--bck-second) !important;
 }
 
-td{
-
-color: var(--txt-main) !important;
+.sc-gsDKAQ {
+  background-color: var(--bck-second) !important;
 }
 
-legend{
+td {
+
   color: var(--txt-main) !important;
-  }
-p{
+}
+
+legend {
   color: var(--txt-main) !important;
-  }
-  b{
-    color: var(--txt-main) !important;
-    }
-h2{
+}
+
+p {
+  color: var(--txt-main) !important;
+}
+
+b {
+  color: var(--txt-main) !important;
+}
+
+h2 {
   color: var(--txt-main);
 }
-.cNILyv{
-    color: var(--txt-main) !important;
-  }
-.active{
-    color: var(--txt-active) !important;
-  }
-fieldset{
+
+.cNILyv {
+  color: var(--txt-main) !important;
+}
+
+.active {
+  color: var(--txt-active) !important;
+}
+
+fieldset {
   border-radius: 25px;
 }
+
 button {
   color: var(--txt-main) !important;
   background-color: var(--bck-second) !important;
 
-  }
-  strong{
-    color: var(--txt-main);
-  }
-  .jlorcA{    height: 35px !important;
-  }
-  .junquI > .toprow{
-    height: 35px !important;
-  }
+}
 
-  .gSXomW > .expandable > .description{
-    border-width: 1.2px 1.2px 1.2px !important;
-border-style: solid !important;
-border-color:rgb(190, 190, 190) !important;
-  }
-  .gSXomW > .toprow, .foNwWN > .toprow{
-    border-bottom: 1.2px solid rgb(190, 190, 190);
-    padding: 5px;
-    margin-bottom: 3px;
-  }
-  .sc-eCImPb
-  {
-      padding-top: 5px;
-      padding-left: 5px;
-      padding-right: 10px;
-      padding-bottom: 0px;
-  
-  }
-  .jlorcA > .toprow > div:last-of-type{
-    margin: 0px !important;
-  }
-  .junquI > .toprow > div:last-of-type{
-    margin: 0px !important;
-
-  }
-  abbr{
-    color: var(--txt-main);
-  }
-h3{
+strong {
   color: var(--txt-main);
 }
-input{
+
+.jlorcA {
+  height: 35px !important;
+}
+
+.junquI>.toprow {
+  height: 35px !important;
+}
+
+.gSXomW>.expandable>.description {
+  border-width: 1.2px 1.2px 1.2px !important;
+  border-style: solid !important;
+  border-color: rgb(190, 190, 190) !important;
+}
+
+.gSXomW>.toprow,
+.foNwWN>.toprow {
+  border-bottom: 1.2px solid rgb(190, 190, 190);
+  padding: 5px;
+  margin-bottom: 3px;
+}
+
+.sc-eCImPb {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+
+}
+
+.jlorcA>.toprow>div:last-of-type {
+  margin: 0px !important;
+}
+
+.junquI>.toprow>div:last-of-type {
+  margin: 0px !important;
+
+}
+
+abbr {
+  color: var(--txt-main);
+}
+
+h3 {
+  color: var(--txt-main);
+}
+
+input {
   background-color: var(--bck-third) !important;
   color: var(--txt-main) !important;
 }
-header{
+
+header {
   background-color: var(--bck-third) !important;
 
 }
-.cBFcpz > .edit-booking-bottomrow > .edit-booking-bottomrow-right > button{
-background-color: var(--btn) !important;
-}
-.cBFcpz > .edit-booking-toprow > div > button{
+
+.cBFcpz>.edit-booking-bottomrow>.edit-booking-bottomrow-right>button {
   background-color: var(--btn) !important;
-  }
-  textarea{
-    background-color: var(--bck-third) !important;
-    color: var(--txt-main) !important;
-  }
-  .FfqaS, .cyFeay
-    {
-      background-color: var(--btn) !important;
-      }
-  .legendFilter{
-    margin-left: 50px;
-  }
-  .dropdown{
-    color: var(--txt-main);
-  }
-  .savedTemplateSelector{
-    width: 50px;
-  }
-  .FfqaS > div{
-    background-color: var(--btn) !important;
+}
 
-  }
-  .bSDVWa .DBTageMainBox{
-    margin: 5px !important;
-  }
+.cBFcpz>.edit-booking-toprow>div>button {
+  background-color: var(--btn) !important;
+}
 
- 
+textarea {
+  background-color: var(--bck-third) !important;
+  color: var(--txt-main) !important;
+}
 
-  .ZWdtn .ButtonFull
-  {
-    background-color: var(--btn) !important;
-    box-shadow: 5px 5px 15px 3px #000000    ;
-  }
-  .dashboard-fehler
-  {
-    border: 2px dashed;
-    padding: 4px;
-    border-radius: 5px;
-    font-weight: bold;
-  }
+.FfqaS,
+.cyFeay {
+  background-color: var(--btn) !important;
+}
+
+.legendFilter {
+  margin-left: 50px;
+}
+
+.dropdown {
+  color: var(--txt-main);
+}
+
+.savedTemplateSelector {
+  width: 50px;
+}
+
+.FfqaS>div {
+  background-color: var(--btn) !important;
+
+}
+
+.bSDVWa .DBTageMainBox {
+  margin: 5px !important;
+}
+
+
+
+.ZWdtn .ButtonFull {
+  background-color: var(--btn) !important;
+  box-shadow: 5px 5px 15px 3px #000000;
+}
+
+.dashboard-fehler {
+  border: 2px dashed;
+  padding: 4px;
+  border-radius: 5px;
+  font-weight: bold;
+}
