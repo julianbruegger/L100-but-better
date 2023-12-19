@@ -28,10 +28,19 @@ main {
   background-color: var(--bck-main) !important;
 }
 
-div:not(.dmfVfU):not(.css-9uxpgx) {
+div:not(.dmfVfU):not(.css-9uxpgx):not(.sc-dkPtRN) {
   background-color: var(--bck-second) !important;
   border-radius: 25px;
 
+}
+
+.bumYOr>.time>.time-labels {
+  color: var(--txt-main);
+}
+
+span>b>img {
+  filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(149deg) brightness(90%) contrast(104%);
+  margin-left: 10px;
 }
 
 .css-qc6sy-singleValue {
